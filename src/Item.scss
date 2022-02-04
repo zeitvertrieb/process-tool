@@ -1,0 +1,27 @@
+.bx--progress {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.bx--modal-content p {
+  padding-right: 0;
+}
+
+.progress {
+  margin-bottom: 3rem;
+}
+
+.bx--progress-optional svg {
+  margin-left: 0 !important;
+}
+
+.notes {
+  margin: 1rem 0;
+}
+
+.meta {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-auto-flow: column;
+  grid-gap: var(--cds-spacing-03);
+}

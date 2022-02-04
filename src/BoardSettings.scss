@@ -1,0 +1,6 @@
+.settings {
+  display: grid;
+  grid-auto-columns: minmax(8rem, 1fr);
+  grid-auto-flow: column;
+  background-color: var(--cds-field, #f4f4f4);
+}

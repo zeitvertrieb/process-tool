@@ -1,0 +1,24 @@
+$feature-flags: (
+  enable-css-custom-properties: true,
+);
+
+@import '~carbon-components/scss/globals/scss/css--helpers';
+@import '~carbon-components/scss/globals/scss/vendor/@carbon/elements/scss/themes/mixins';
+@import '~carbon-components/scss/globals/scss/styles.scss';
+
+:root {
+  @include carbon--theme($carbon--theme--g10, true);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include carbon--theme($carbon--theme--g90, true);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
