@@ -1,25 +1,25 @@
-import React, { useState } from "react";
-import { useLocalStorage } from "./useLocalStorage";
-import { Notification20 } from "@carbon/icons-react";
+import React, { useState } from 'react';
+import { useLocalStorage } from './useLocalStorage';
+import { Notification20 } from '@carbon/icons-react';
 import {
   Header,
   HeaderName,
   HeaderGlobalAction,
   HeaderGlobalBar,
   HeaderPanel,
-} from "carbon-components-react/lib/components/UIShell";
-import { Tabs, Tab } from "carbon-components-react";
+} from 'carbon-components-react/lib/components/UIShell';
+import { Tabs, Tab } from 'carbon-components-react';
 
-import BoardSettings from "./components/BoardSettings";
-import Board from "./components/Board";
-import { BoardContextProvider } from "./components/BoardContext";
-import List from "./components/List";
-import Notifications from "./components/Notifications";
+import BoardSettings from './components/BoardSettings';
+import Board from './components/Board';
+import { BoardContextProvider } from './components/BoardContext';
+import List from './components/List';
+import Notifications from './components/Notifications';
 
-import "./App.scss";
+import './App.scss';
 
 function App() {
-  const [state, setState] = useLocalStorage("data", "");
+  const [state, setState] = useLocalStorage('data', '');
   const [expanded, setExpanded] = useState(false);
 
   const toggleRightPanel = () => {
@@ -34,7 +34,10 @@ function App() {
         </HeaderName>
         <HeaderGlobalBar>
           <HeaderGlobalAction aria-label="Account" onClick={() => {}}>
-            <img src="./user-anna.jpg" alt="" />
+            <img
+              src="https://randomuser.me/api/portraits/women/86.jpg"
+              alt=""
+            />
           </HeaderGlobalAction>
           <HeaderGlobalAction
             aria-label="Notifications"
